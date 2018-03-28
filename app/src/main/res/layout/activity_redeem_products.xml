@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.stpl.loyality_ui.Redeem_products"
+    android:orientation="vertical"
+>
+<RelativeLayout
+
+    android:id="@+id/relative"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.stpl.loyality_ui.Redeem_products"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/txt_label"
+        android:layout_gravity="top"
+        android:layout_alignParentTop="true"
+        android:text="Redeem Products"
+        android:textSize="@dimen/_30sdp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/redeemList"
+        android:layout_above="@+id/buyProduct"
+        android:layout_below="@+id/txt_label"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_width="match_parent"/>
+
+    <Button
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/buyProduct"
+        android:background="@drawable/round_corner_button"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="Buy Product"
+        android:layout_marginBottom="@dimen/_10sdp"
+        />
+
+    <Button
+        android:id="@+id/redeemCash"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_corner_button"
+        android:text="Redeem Cash" />
+
+</RelativeLayout>
+
+
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:visibility="gone"
+        android:id="@+id/fragment_redeemCash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</LinearLayout>
+
+    <!--
+    <TextView
+        android:id="@+id/message_buyProducts"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:gravity="center"
+        android:id="@+id/description_buyProducts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/code_buyProducts"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:gravity="center"
+        android:id="@+id/respMsg_buyProducts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+<ListView
+android:layout_marginTop="@dimen/_10sdp"
+android:textSize="40dp"
+android:id="@+id/redeemList"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_below="@+id/response"></ListView>
+-->

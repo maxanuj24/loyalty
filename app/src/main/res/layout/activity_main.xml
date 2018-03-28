@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    >
+    <TextView
+        android:text="Loyality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/_30sdp"
+
+        />
+</LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.stpl.loyality_ui.MainActivity">
+
+        <include
+            android:id="@+id/top_header"
+            layout="@layout/layout_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="@dimen/_318sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:padding="5dip"
+            >
+            <ImageView
+                android:src="@drawable/silver"
+                android:id="@+id/product_image"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                />
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/current_tier_text"
+                    android:text="Bronze"
+                    android:layout_width="@dimen/_165sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:textColor="#ff5c00"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/_28sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    />
+
+                <TextView
+                    android:id="@+id/yourCurrentClub"
+                    android:textColor="#000000"
+                    android:layout_width="@dimen/_175sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:text="Your Current Club"
+                    android:textSize="@dimen/_18sdp" />
+                <TextView
+                    android:id="@+id/points"
+                    android:textColor="#ff5c00"
+                    android:layout_width="@dimen/_175sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:text="Points :- 0"
+                    android:textSize="@dimen/_18sdp" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/redeemNow"
+            android:background="@drawable/round_corner_button"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:text="Redeem Now" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_500sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_20sdp"
+            android:background="#f2eee5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/upgradeBtn"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/round_corner_textview"
+                android:gravity="center"
+                android:text="Upgrade your club level"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:id="@+id/current_tier_img1"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:src="@drawable/silver" />
+
+            <TextView
+                android:id="@+id/current_tier_text1"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:baselineAligned="false"
+                android:gravity="center"
+                android:text="Bronze Club"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <ProgressBar
+                android:id="@+id/loyality_progress"
+                style="@style/CustomProgressBar"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/reqire_statemant"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:text="You just need to deposit some money to  points to unlock next Club"
+                android:textSize="@dimen/_15sdp" />
+
+            <ImageView
+                android:id="@+id/next_tier_img"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_8sdp"
+
+                android:src="@drawable/gold" />
+
+            <TextView
+                android:id="@+id/next_tier_text"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="Silver Club"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+
+        </LinearLayout>
+
+
+       <Button
+            android:layout_gravity="center"
+            android:background="@drawable/round_corner_button"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:id="@+id/loyality_statement"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="Loyality  Point Statement"
+            />
+
+        <Button
+            android:id="@+id/api_hit"
+            android:text="Hit Api"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+      <EditText
+          android:id="@+id/id"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

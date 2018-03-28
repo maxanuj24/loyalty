@@ -1,0 +1,142 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.stpl.loyality_ui.RedeemCash"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_marginTop="@dimen/_20sdp"
+       android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/r10"
+        android:text="10"
+        android:gravity="center"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:textColor="#ffffff"
+        android:background="@drawable/round_corner_textview"
+        />
+
+    <Button
+         android:layout_margin="@dimen/_10sdp"
+        android:text="50"
+        android:id="@+id/r50"
+        android:gravity="center"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:textColor="#ffffff"
+        android:background="@drawable/round_corner_textview"
+        />
+
+    <Button
+        android:layout_margin="@dimen/_10sdp"
+        android:text="100"
+        android:id="@+id/r100"
+        android:gravity="center"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:textColor="#ffffff"
+        android:background="@drawable/round_corner_textview"
+        />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_margin="@dimen/_10sdp"
+            android:id="@+id/r200"
+            android:text="200"
+            android:gravity="center"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_corner_textview"
+            />
+
+        <Button
+            android:layout_margin="@dimen/_10sdp"
+            android:text="500"
+            android:id="@+id/r500"
+            android:gravity="center"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_corner_textview"
+            />
+
+        <Button
+            android:layout_margin="@dimen/_10sdp"
+            android:text="1000"
+            android:id="@+id/r1000"
+            android:gravity="center"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_corner_textview"
+            />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editAmount"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:hint="Enter the amount " />
+
+    <Button
+        android:id="@+id/buy"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/round_corner_button"
+        android:hint=" Buy " />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_20sdp"
+         android:gravity="center"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/respMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
+<!--
+
+    android:text="You can instatntly redeem
+    your loyality points into cash once you reach Platinum Club.
+    \nOn successful redeemption, the cash amount will be transferred to your account."-->
